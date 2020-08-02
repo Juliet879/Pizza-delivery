@@ -28,7 +28,8 @@ nav>ul>li>a{
 
 
 .header{
-    background-image: url(https://previews.123rf.com/images/bbtreesubmission/bbtreesubmission1809/bbtreesubmission180914209/108214762-combination-pizza.jpg);
+    /* background-image: url(https://previews.123rf.com/images/bbtreesubmission/bbtreesubmission1809/bbtreesubmission180914209/108214762-combination-pizza.jpg); */
+    background-image: url(https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
     height: 100vh;
 }
 
@@ -52,8 +53,30 @@ nav>ul>li>a{
 }
 
 #about p{
-    padding-left: 30%;
+    padding-left: 10%;
 }
 #about h1{
     color: brown;
+}
+
+/* varieties section */
+#img1,#img2,#img3,#img4{
+    width: 390px;
+    height:400px;
+    padding: 25px;
+}
+#varieties p{
+    text-align: center;
+    font-style: italic;
+    font-weight: 1500px;
+}
+#img5,#img6,#img7,#img8{
+    width: 390px;
+    height:400px;
+    padding: 25px;
+}
+#varieties h1{
+    color: brown;
+    font-style: italic;
+    padding-left: 45%;
 }
