@@ -1,0 +1,31 @@
+/* nav section */
+nav {
+padding-top:  30px;
+background-color: rgb(2, 2, 2);
+margin-top: 0px;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+nav ul li{
+    display: flex;
+    font-size: 25px;
+    font-style: italic;
+    justify-content: center;
+    color: white;
+}   
+nav>ul>li>a{
+    text-transform: uppercase;
+    color:white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    padding-left: 20px;
+  }
+
+
+body{
+    background-image: url(https://previews.123rf.com/images/bbtreesubmission/bbtreesubmission1809/bbtreesubmission180914209/108214762-combination-pizza.jpg);
+}
