@@ -45,8 +45,12 @@ nav>ul>li>a{
 /* about section */
 #about{
     text-align: center;
-    padding: 100px;
     font-size: 25px;
     font-style: italic;
     background-color: wheat;
+    display: flex;
+}
+
+#about p{
+    padding-left: 30%;
 }
