@@ -15,7 +15,7 @@ nav ul li{
     font-size: 25px;
     font-style: italic;
     justify-content: center;
-    color: white;
+    color: wheat;
 }   
 nav>ul>li>a{
     text-transform: uppercase;
@@ -36,10 +36,16 @@ nav>ul>li>a{
 
 /* landing section */
 #landing h1{
-    padding-left: 38%;
+    padding-left: 20%;
     padding-top: 5%;
-    font-size: 80px;
-    font-style: italic;
+    font-size: 60px;
+    color: wheat;
+}
+#landing p{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
 }
 
 
@@ -79,4 +85,16 @@ nav>ul>li>a{
     color: brown;
     font-style: italic;
     padding-left: 45%;
+}
+#order{
+    background-image: url();}
+option{
+    width: 500px;
+}
+#container-order{
+    height: 60vh;
+    color: black;
+    font-size: 30px;
+    width: 30wh;
+    background-color: transparent;
 }
