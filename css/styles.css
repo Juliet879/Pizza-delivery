@@ -40,3 +40,13 @@ nav>ul>li>a{
     font-size: 80px;
     font-style: italic;
 }
+
+
+/* about section */
+#about{
+    text-align: center;
+    padding: 100px;
+    font-size: 25px;
+    font-style: italic;
+    background-color: wheat;
+}
