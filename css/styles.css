@@ -1,8 +1,9 @@
 /* nav section */
 nav {
-padding-top:  30px;
+padding-top:  20px;
 background-color: rgb(2, 2, 2);
 margin-top: 0px;
+width: 100%;
 }
 nav ul{
     display: flex;
@@ -28,4 +29,13 @@ nav>ul>li>a{
 
 body{
     background-image: url(https://previews.123rf.com/images/bbtreesubmission/bbtreesubmission1809/bbtreesubmission180914209/108214762-combination-pizza.jpg);
+}
+
+
+/* landing section */
+#landing h1{
+    padding-left: 38%;
+    padding-top: 5%;
+    font-size: 80px;
+    font-style: italic;
 }
