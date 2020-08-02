@@ -27,8 +27,9 @@ nav>ul>li>a{
   }
 
 
-body{
+.header{
     background-image: url(https://previews.123rf.com/images/bbtreesubmission/bbtreesubmission1809/bbtreesubmission180914209/108214762-combination-pizza.jpg);
+    height: 100vh;
 }
 
 
