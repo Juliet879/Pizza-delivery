@@ -54,3 +54,6 @@ nav>ul>li>a{
 #about p{
     padding-left: 30%;
 }
+#about h1{
+    color: brown;
+}
