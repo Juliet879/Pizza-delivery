@@ -14,7 +14,7 @@ $("button.order").click(function(event){
     let pcrust = $("#crust option:selected").val();
     let ptopping = [];
     $.each($("input[name= 'toppings']:checked"), function(){
-        ptopping.push($this).val());
+        ptopping.push($this).val();
     });
     console.log(ptopping.join(","));
 
@@ -73,7 +73,7 @@ $("button.order").click(function(event){
     $("#pizzasize").html($("#flavor option:selected").val());    
     $("#pizzacrust").html($("#flavor option:selected").val());  
     $("#pizzatopping").html(ptopping.join(",")) ;   
-    $"#totals".html(total)
+    $("#totals").html(total)
 
     // add pizza button
     $("button.addPizza").click(function(){
@@ -82,7 +82,7 @@ $("button.order").click(function(event){
       let pcrust = $("#crust option:selected").val();
       let ptopping = [];
       $.each($("input[name= 'toppings']:checked"), function(){
-          ptopping.push($this).val());
+          ptopping.push($this).val();
       });
       console.log(ptopping.join(","));
 
@@ -142,10 +142,42 @@ $("button.order").click(function(event){
   //  home delivery button
   $("button.delivery").click(function(){
     $(".pizzatable").hide();
-    $(".choise h2").hide();
+    $(".combined h2").hide();
     $(".delivery").slideDown(1000);
     $("#addedprice").hide();
     $("button.deliver").hide();
     $("#pizzatotal").hide();
-  })
-    
+    let deliveryamount = checkoutTotal + 150;
+    console.log("Total amount " + deliveryamount + " on delivery")
+    $("#totalbill").append("Total amount plus delivery fee is: "+ deliveryamount);
+  });
+
+  // when one clicks place order button
+  $("button#final-order").click(function(event){
+    event.preventDefault();
+
+    $("#pizzatotal").hide();
+    $(".delivery").hide();
+    $("button#final-order").hide();
+    let deliveryamount = checkoutTotal + 200;
+    console.log("Final Bill is: " + deliveryamount);
+    let person = $("input#name").val();
+    let phone = $("input#phone").val();
+    let location = $("input#location").val();
+
+    if ($("input#name").val() && $("input#phone").val() && $("input#location").val()!=""){
+      
+      $("#finallmessage").append(person + ", we have received your order and it will be delivered to you at " + location + ". Prepare Sh." + deliveryamount);
+      $("#totalbill").hide();
+      $("#finallmessage").slideDown(1400)
+    }
+    else{
+      alert("Please fill in the details for delivery!");
+      $(".delivery").show();
+      $("button#final-order").show();
+    }
+  
+  event.preventDefault();
+  
+  }
+});
