@@ -97,43 +97,110 @@
 
 
     <!-- making the order -->
-    <div id="order">
-        <div id="container-order">
-        <h1>Order Here</h1>
-        <p>Make your order and we will deliver at your door step</p>
-        <div class="row">
-            <div class="col-md-5">
-                <form action="">
-                    <label for="select">Select Your Flavor</label><br>
-                    <select name="flavor" id="">
-                        <option value="chicke ">Chicken pizza</option>
-                        <option value="bacon">Bacon pizza</option>
-                        <option value="eggplant">Eggplant pizza</option>
-                        <option value="pepperoni">Pepperoni pizza</option>
-                        <option value="pineapple">Pinneapple pizza</option>
-                        <option value="sausage">Sausage pizza</option>
-                        <option value="anchovy">Anchovy pizza</option>
-                    </select><br>
-                    <label for="select">Select Size</label><br>
-                    <select name="size" id=""><br>
-                        <option value="">Select size here </option>
-                        <option value="small">Small-- Sh.700</option>
-                        <option value="medium">Medium--Sh.1100</option>
-                        <option value="large">Large--Sh.1750</option>
-                    </select>
-                </form>
+    <div class="order">
+        <div class="order-overlay">
+            <h1>Order Here</h1>
+            <h3>Make your order and we will deliver at your door step</h3>
+            <div class="row">
+                <div class="col-md-5 text">
+                    <form action="">
+                        <label for="select">Select Your Flavor</label><br>
+                        <select name="flavor" id="flavor"><br>
+                            <option value="chicke ">Chicken pizza</option><br>
+                            <option value="bacon">Bacon pizza</option>
+                            <option value="eggplant">Eggplant pizza</option>
+                            <option value="pepperoni">Pepperoni pizza</option>
+                            <option value="pineapple">Pinneapple pizza</option>
+                            <option value="sausage">Sausage pizza</option>
+                            <option value="anchovy">Anchovy pizza</option>
+                        </select><br>
+                        <label for="select">Select Size</label><br>
+                        <select name="size" id="size"><br>
+                            <option value="">Select size here </option>
+                            <option value="small">Small-- Sh.700</option>
+                            <option value="medium">Medium--Sh.1100</option>
+                            <option value="large">Large--Sh.1750</option>
+                        </select><br>
+                        <label for="select">Favourite Crust</label><br>
+                        <select name="crust" id="crust"><br><br>
+                            <option value="">Select your preferred crust</option>
+                            <option value="cheese">Cheese-Stuffed Crust-- Sh.200</option>
+                            <option value="sicilian">Sicilian Crust--Sh.150</option>
+                            <option value="neapolitan">Neapolitan Crust--Sh.100</option>
+                        </select><br>
+                        <label for="Toppings">Select Your Toppings at Sh.50 each</label> 
+                        <div class="">
+                            <input type="checkbox" class="input" id="cheese" value="cheese" name="toppings">
+                            <label class="label" for="cheese">Cheese</label>
+                        </div>
+                        <div class="">
+                            <input type="checkbox" class="input" id="pineapple" value="pineapple" name="toppings">
+                            <label class="label" for="pineapple"> Pineapple</label>
+                        </div>
+                        <div class="">
+                            <input type="checkbox" class="input" id="anchovy" value="anchovy" name="toppings">
+                            <label class="label" for="anchovy">Anchovy</label>
+                        </div>
+                        <br>
+                        <button type="submit" class="submit">Order</button>
+                    </form>
+                </div>
+                <div class="">
+                    <div id="order-note">
+                        <p>Your order will be processed and delivered within one hour of placing.</p>
+                        <p>Make sure you have the total amout for the order during order delivery.</p>
+                        <p>Incase of any comment of complaint, Please reach out to us as fast as possible.</p>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <div class="choise">
+            <h2>Your Order is:</h2>
+            <div id="your-orders">
+                <table class="table table-sm  pizzatable">
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Size</th>
+                            <th scope="col">Crust</th>
+                            <th scope="col">Topping</th>
+                            <th scope="col">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ordersmade">
+                        <tr>
+                            <td id="pizzaname"></td>
+                            <td id="pizzasize"></td>
+                            <td id="pizzacrust"></td>
+                            <td id="pizzatopping"></td>
+                            <td id="totals"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p id="pizzatotal"></p>
+                <p id="totalbill"></p>
+                <p id="addedprice">Delivery will cost sh. 150</p>
+                <p id="finallmessage"></p>
+            </div>
+            <button class="btn btn-orange addPizza">Add Pizza</button>
+            <button class="btn btn-orange" id="checkout">Checkout</button>
+            <button class="btn btn-orange deliver">Home delivery?</button>
+        </div>
+        <div class="delivery">
+            <form action="">
+                <div class="form-group">
+                    <input type="text" id="name" class="form-control mb-3" placeholder="Name">
+                    <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number">
+                    <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
+                    <button class="btn btn-orange" id="final-order">Place Order</button>
+                </div>
+            </form>
+        </div>
     </div>
-</div>
+    
 
-
-
-
-
-
-
-
+    <script src="jq"></script>
     <script src="scripts.js"></script>
 </body>
 

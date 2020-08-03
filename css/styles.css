@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
 /* nav section */
 nav {
 padding-top:  20px;
@@ -28,9 +32,10 @@ nav>ul>li>a{
 
 
 .header{
-    /* background-image: url(https://previews.123rf.com/images/bbtreesubmission/bbtreesubmission1809/bbtreesubmission180914209/108214762-combination-pizza.jpg); */
     background-image: url(https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
     height: 100vh;
+    background-repeat: repeat-x;
+    width: 1600px;
 }
 
 
@@ -86,15 +91,70 @@ nav>ul>li>a{
     font-style: italic;
     padding-left: 45%;
 }
-#order{
-    background-image: url();}
-option{
-    width: 500px;
-}
-#container-order{
-    height: 60vh;
-    color: black;
+
+/* order section */
+.choise{
+    display: none;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .deliver{
+    display: none;
+  }
+  .delivery{
+    display: none;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  td,th{
+    font-size: 20px;
+    color: white;
+  }
+  .choise h2{
+    color:orange;
+    text-align: left;
+  }
+  #your-orders{
+    color: white;
     font-size: 30px;
-    width: 30wh;
-    background-color: transparent;
+  }
+.order-overlay{
+        background-color: rgba(0, 0, 0, 0.8);
+        margin-left: 2%;
+        margin-right: 2%;
+        padding-bottom: 20px;
+        padding-left: 6%;
+}
+ .order{
+        background-attachment: fixed;
+        background-image: url(https://images.squarespace-cdn.com/content/v1/501c4ecfe4b008149ec2ed3e/1480527273830-6400NJ86DMLDTM5LFAEF/ke17ZwdGBToddI8pDm48kD2z-LLWBH7obTt8oweMjYNZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PImOHbQbjXasSwxFcLdk_scOGqT4Z6kt8j9Nmw5KBS9fwKMshLAGzx4R3EDFOm1kBS/Abshar+9.jpg);  
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+        padding-top: 4%;
+        padding-bottom: 4%;
+} 
+#order-note{
+    padding-top: 5%;
+    font-size: 22px;
+    padding-right: 8%;
+    padding-left: 5%;
+    color: #ffa500;
+}
+#order{
+    padding-top: 5%;
+    font-size: 25px;
+    background-image: url(https://images.squarespace-cdn.com/content/v1/501c4ecfe4b008149ec2ed3e/1480527273830-6400NJ86DMLDTM5LFAEF/ke17ZwdGBToddI8pDm48kD2z-LLWBH7obTt8oweMjYNZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PImOHbQbjXasSwxFcLdk_scOGqT4Z6kt8j9Nmw5KBS9fwKMshLAGzx4R3EDFOm1kBS/Abshar+9.jpg);  
+    background-repeat: no-repeat;
+}
+.order h1{
+    padding-left: 35%;
+    color: lawngreen;
+}
+.order h3{
+    padding-left: 25%;
+}
+.text{
+    font-size: 20px;
 }
