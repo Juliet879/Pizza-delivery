@@ -8,7 +8,7 @@
 This is a link to my [github repository]
 (https://github.com/Juliet879/Pizza-delivery)
 
-Project [live link]
+Project [live link](https://juliet879.github.io/Pizza-delivery/)
 
 This is website project  is about  pizza shop with the delivery services we offer to our clients upon orders made by them on this website.
 
