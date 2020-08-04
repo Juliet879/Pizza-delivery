@@ -3,6 +3,8 @@
 ### This is a website that gives detailed information that showcases our delivery pizza services to our clients , 02 August,2020.
 ### By Juliet Gisemba
 
+<img src=images/screenshot.png>
+
 ## Description
 This is a link to my [github repository]
 
