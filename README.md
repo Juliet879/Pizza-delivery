@@ -6,6 +6,7 @@
 <img src="images/Eddplant.jpg" alt="">
 ## Description
 This is a link to my [github repository]
+(https://github.com/Juliet879/Pizza-delivery)
 
 Project [live link]
 
